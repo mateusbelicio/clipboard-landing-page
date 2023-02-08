@@ -1,0 +1,35 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@use '../abstracts/' as *;
+
+body {
+  font-size: to-rem(18);
+  font-weight: 400;
+  font-family: $ff-primary;
+  color: clr('neutral');
+}
+
+.heading--1 {
+  font-size: minmax-font(28, 52);
+}
+
+.heading--2 {
+  font-size: minmax-font(24, 40);
+}
+
+.heading--3 {
+  font-size: minmax-font(20, 32);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: clr('neutral', 500);
+}
