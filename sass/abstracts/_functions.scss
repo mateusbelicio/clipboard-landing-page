@@ -58,3 +58,12 @@
 @function minmax-font($min, $max) {
   @return clamp(to-rem($min), to-view-width(calc(($min + $max) / 2)), to-rem($max));
 }
+
+/// Returns the letter spacing corresponding to the given percentage
+/// @access public
+/// @param {Number} $percentage - letter spacing percentage
+/// @return {Number} - letter spacing in 'em'
+/// @require $percentage
+@function spacing($percentage) {
+  @return $percentage * 0.01em;
+}

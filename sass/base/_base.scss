@@ -24,3 +24,12 @@ html {
   margin: 0;
   padding: 0;
 }
+
+::selection {
+  background-color: clr('primary');
+  color: clr('neutral', 200);
+}
+
+*:focus-visible {
+  outline: 2px dashed clr('neutral');
+}

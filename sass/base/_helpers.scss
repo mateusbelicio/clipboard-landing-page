@@ -19,8 +19,8 @@
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.center-container {
-  $padding-inline: to-rem(16);
+.container {
+  $padding-inline: to-rem(32);
   $min-width: to-rem(320);
 
   display: grid;
@@ -35,13 +35,18 @@
 }
 
 .grid-container {
-  $num-grid: 8;
+  $padding-inline: to-rem(32);
+  $num-grid: 12;
 
   display: grid;
   grid-template-columns:
-    [center-start]
+    [full-start] minmax($padding-inline, 1fr) [center-start]
     repeat($num-grid, [col-start] minmax(0, calc($max-width / $num-grid)) [col-end])
-    [center-end];
+    [center-end] minmax($padding-inline, 1fr) [full-end];
+
+  & > * {
+    grid-column: center;
+  }
 }
 
 /**

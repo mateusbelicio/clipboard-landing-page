@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the cta section of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/' as *;
+
+.cta {
+  margin-bottom: to-rem(134);
+
+  @include breakpoint('medium') {
+    margin-bottom: to-rem(114);
+  }
+
+  &__text {
+    @include breakpoint('medium') {
+      grid-column: col-start 3 / col-end -3;
+    }
+  }
+}

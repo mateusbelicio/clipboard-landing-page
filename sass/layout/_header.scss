@@ -3,3 +3,46 @@
 // -----------------------------------------------------------------------------
 
 @use '../abstracts/' as *;
+
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 25%,
+      clr('neutral', 200) 50%
+    ),
+    url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  padding-block: to-rem(125);
+
+  text-align: center;
+
+  @include breakpoint('medium') {
+    padding-block: to-rem(130);
+    font-size: to-rem(20);
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 25%,
+        clr('neutral', 200) 50%
+      ),
+      url(../images/bg-header-desktop.png);
+  }
+
+  &__text {
+    @include breakpoint('medium') {
+      grid-column: col-start 3 / col-end -3;
+    }
+  }
+
+  &__logo {
+    margin-inline: auto;
+    margin-bottom: to-rem(64);
+
+    @include breakpoint('medium') {
+      margin-bottom: to-rem(56);
+    }
+  }
+}

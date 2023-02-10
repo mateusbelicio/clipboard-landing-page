@@ -1,0 +1,23 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the Clipboard landing page challenge on Frontend Mentor.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusbelicio/clipboard-landing-page.git"
+  },
+  "keywords": [],
+  "author": "Mateus Belício",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusbelicio/clipboard-landing-page/issues"
+  },
+  "homepage": "https://github.com/mateusbelicio/clipboard-landing-page",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}

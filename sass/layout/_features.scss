@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the features section of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/' as *;
+
+.features {
+  margin-bottom: to-rem(186);
+
+  @include breakpoint('medium') {
+    margin-bottom: to-rem(152);
+  }
+
+  &__text {
+    margin-bottom: to-rem(66);
+
+    @include breakpoint('medium') {
+      margin-bottom: to-rem(80);
+      grid-column: col-start 3 / col-end -3;
+    }
+  }
+
+  &__image {
+    margin-bottom: to-rem(56);
+
+    @include breakpoint('medium') {
+      margin-bottom: 0;
+      grid-column: full-start / col-end 6;
+      height: min(50vw, to-rem(570));
+      justify-self: end;
+      align-self: center;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: to-rem(48);
+
+    @include breakpoint('medium') {
+      grid-column: col-start 8 / col-end 11;
+      margin-left: to-rem(18);
+      align-self: center;
+    }
+  }
+
+  &__name {
+    @include breakpoint('medium') {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    @include breakpoint('medium') {
+      text-align: left;
+      font-size: to-rem(16);
+      line-height: 1.85;
+      letter-spacing: spacing(1);
+    }
+  }
+}

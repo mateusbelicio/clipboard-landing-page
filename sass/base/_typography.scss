@@ -5,22 +5,61 @@
 @use '../abstracts/' as *;
 
 body {
-  font-size: to-rem(18);
+  font-size: to-rem(16);
   font-weight: 400;
   font-family: $ff-primary;
   color: clr('neutral');
+  background-color: clr('neutral', 200);
+  text-align: center;
+  letter-spacing: spacing(1);
+  line-height: 1.6;
+
+  @include breakpoint('medium') {
+    font-size: to-rem(18);
+    letter-spacing: spacing(1);
+  }
+}
+
+%heading {
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+  color: clr('neutral', 500);
+  letter-spacing: spacing(-2);
 }
 
 .heading--1 {
-  font-size: minmax-font(28, 52);
+  font-size: to-rem(32);
+  margin-block-end: to-rem(18);
+  @extend %heading;
+
+  @include breakpoint('medium') {
+    font-size: to-rem(46);
+    margin-block-end: to-rem(14);
+    letter-spacing: spacing(-1.5);
+  }
 }
 
 .heading--2 {
-  font-size: minmax-font(24, 40);
+  font-size: to-rem(28);
+  margin-block-end: to-rem(18);
+  @extend %heading;
+
+  @include breakpoint('medium') {
+    font-size: to-rem(36);
+    margin-block-end: to-rem(22);
+    letter-spacing: spacing(-1.5);
+  }
 }
 
 .heading--3 {
-  font-size: minmax-font(20, 32);
+  font-size: to-rem(24);
+  margin-block-end: to-rem(10);
+  @extend %heading;
+
+  @include breakpoint('medium') {
+    letter-spacing: spacing(-1.5);
+  }
 }
 
 h1,
@@ -30,6 +69,4 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-weight: 600;
-  color: clr('neutral', 500);
 }

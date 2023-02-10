@@ -3,3 +3,88 @@
 // -----------------------------------------------------------------------------
 
 @use '../abstracts/' as *;
+
+.download {
+  margin-block: to-rem(48) to-rem(36);
+
+  display: grid;
+  gap: to-rem(24);
+
+  @include breakpoint(460) {
+    justify-items: center;
+  }
+
+  @include breakpoint('medium') {
+    grid-template-columns: repeat(2, 1fr);
+    gap: to-rem(18);
+
+    & *:nth-child(odd) {
+      justify-self: end;
+    }
+
+    & *:nth-child(even) {
+      justify-self: start;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: to-rem(14) to-rem(36);
+    cursor: pointer;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: to-rem(18);
+    letter-spacing: spacing(4);
+    line-height: 1;
+
+    color: clr('neutral', 300);
+    background-color: clr('neutral');
+    border-radius: to-rem(50);
+    border-bottom: 3px solid clr('neutral', 500);
+
+    transition: 0.2s;
+    box-shadow: 0 0.5rem 1rem clr('neutral');
+
+    &:hover {
+      background-color: clr('neutral', 300);
+      color: clr('neutral', 500);
+    }
+
+    &:active {
+      border-color: transparent;
+      transform: translateY(2px);
+    }
+
+    &--cyan {
+      background-color: clr('primary');
+      border-color: clr('primary', 500);
+      box-shadow: 0 0.5rem 1.5rem -0.25rem clr('primary', 300);
+
+      &:hover {
+        background-color: clr('primary', 300);
+        color: clr('neutral', 200);
+      }
+
+      &:active {
+        box-shadow: 0 0.25rem 1rem -0.25rem clr('primary', 300);
+      }
+    }
+
+    &--blue {
+      background-color: clr('secondary');
+      border-color: clr('secondary', 500);
+      box-shadow: 0 0.5rem 1.5rem -0.25rem clr('secondary', 300);
+
+      &:hover {
+        background-color: clr('secondary', 300);
+        color: clr('neutral', 200);
+      }
+
+      &:active {
+        box-shadow: 0 0.25rem 1rem -0.25rem clr('secondary', 300);
+      }
+    }
+  }
+}

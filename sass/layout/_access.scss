@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the access section of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/' as *;
+
+.access {
+  justify-items: center;
+  margin-bottom: to-rem(96);
+
+  @include breakpoint('medium') {
+    margin-bottom: to-rem(72);
+  }
+
+  &__text {
+    @include breakpoint('medium') {
+      grid-column: col-start 3 / col-end -3;
+    }
+  }
+
+  &__image {
+    margin-top: to-rem(60);
+
+    @include breakpoint('medium') {
+      margin-top: to-rem(100);
+    }
+  }
+}

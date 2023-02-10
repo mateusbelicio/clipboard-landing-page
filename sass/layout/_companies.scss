@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the companies section of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/' as *;
+
+.companies {
+  margin-bottom: to-rem(170);
+  justify-items: center;
+
+  @include breakpoint('medium') {
+    margin-bottom: to-rem(160);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: to-rem(70);
+    list-style: none;
+
+    grid-column: col-start 4 / col-end -4;
+
+    @include breakpoint('medium') {
+      grid-column: center;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
