@@ -31,6 +31,7 @@
     display: inline-block;
     padding: to-rem(14) to-rem(36);
     cursor: pointer;
+    user-select: none;
 
     text-decoration: none;
     text-align: center;

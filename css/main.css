@@ -338,6 +338,7 @@ template {
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -767,7 +768,6 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-self: end;
   gap: 2.5rem;
 }
 .footer__social .footer__link {
@@ -780,6 +780,7 @@ h6 {
   .footer__social {
     grid-column: col-start -3/center-end;
     align-self: center;
+    justify-self: end;
     gap: 1.5rem;
   }
 }
@@ -810,6 +811,7 @@ h6 {
   display: inline-block;
   padding: 0.875rem 2.25rem;
   cursor: pointer;
+  user-select: none;
   text-decoration: none;
   text-align: center;
   font-weight: 600;
@@ -854,6 +856,14 @@ h6 {
 }
 .download__btn--blue:active {
   box-shadow: 0 0.25rem 1rem -0.25rem var(--clr-secondary-300);
+}
+
+.section {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.section--hidden {
+  transform: translateY(3.125rem);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
