@@ -3,3 +3,12 @@
 // -----------------------------------------------------------------------------
 
 @use '../abstracts/' as *;
+
+.section {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+  &--hidden {
+    transform: translateY(to-rem(50));
+    opacity: 0;
+  }
+}
