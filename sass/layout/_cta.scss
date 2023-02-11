@@ -5,10 +5,10 @@
 @use '../abstracts/' as *;
 
 .cta {
-  margin-bottom: to-rem(134);
+  padding-bottom: to-rem(134);
 
   @include breakpoint('medium') {
-    margin-bottom: to-rem(114);
+    padding-bottom: to-rem(114);
   }
 
   &__text {

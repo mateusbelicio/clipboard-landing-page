@@ -8,7 +8,7 @@
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 
   &--hidden {
-    transform: translateY(to-rem(50));
+    transform: translateY(to-rem(100));
     opacity: 0;
   }
 }

@@ -525,11 +525,11 @@ h6 {
 }
 
 .features {
-  margin-bottom: 11.625rem;
+  padding-bottom: 11.625rem;
 }
 @media only screen and (min-width: 50em) {
   .features {
-    margin-bottom: 9.5rem;
+    padding-bottom: 9.5rem;
   }
 }
 .features__text {
@@ -588,11 +588,11 @@ h6 {
 
 .access {
   justify-items: center;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 @media only screen and (min-width: 50em) {
   .access {
-    margin-bottom: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 @media only screen and (min-width: 50em) {
@@ -610,11 +610,11 @@ h6 {
 }
 
 .tools {
-  margin-bottom: 8.125rem;
+  padding-bottom: 8.125rem;
 }
 @media only screen and (min-width: 50em) {
   .tools {
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
   }
 }
 .tools__text {
@@ -664,12 +664,12 @@ h6 {
 }
 
 .companies {
-  margin-bottom: 10.625rem;
+  padding-bottom: 10.625rem;
   justify-items: center;
 }
 @media only screen and (min-width: 50em) {
   .companies {
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
   }
 }
 .companies__list {
@@ -690,11 +690,11 @@ h6 {
 }
 
 .cta {
-  margin-bottom: 8.375rem;
+  padding-bottom: 8.375rem;
 }
 @media only screen and (min-width: 50em) {
   .cta {
-    margin-bottom: 7.125rem;
+    padding-bottom: 7.125rem;
   }
 }
 @media only screen and (min-width: 50em) {
@@ -862,7 +862,7 @@ h6 {
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 .section--hidden {
-  transform: translateY(3.125rem);
+  transform: translateY(6.25rem);
   opacity: 0;
 }
 

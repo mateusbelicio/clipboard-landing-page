@@ -5,11 +5,11 @@
 @use '../abstracts/' as *;
 
 .companies {
-  margin-bottom: to-rem(170);
+  padding-bottom: to-rem(170);
   justify-items: center;
 
   @include breakpoint('medium') {
-    margin-bottom: to-rem(160);
+    padding-bottom: to-rem(160);
   }
 
   &__list {

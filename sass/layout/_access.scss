@@ -6,10 +6,10 @@
 
 .access {
   justify-items: center;
-  margin-bottom: to-rem(96);
+  padding-bottom: to-rem(96);
 
   @include breakpoint('medium') {
-    margin-bottom: to-rem(72);
+    padding-bottom: to-rem(72);
   }
 
   &__text {

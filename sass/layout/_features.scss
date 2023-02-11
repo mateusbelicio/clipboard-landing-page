@@ -5,10 +5,10 @@
 @use '../abstracts/' as *;
 
 .features {
-  margin-bottom: to-rem(186);
+  padding-bottom: to-rem(186);
 
   @include breakpoint('medium') {
-    margin-bottom: to-rem(152);
+    padding-bottom: to-rem(152);
   }
 
   &__text {
