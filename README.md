@@ -1,20 +1,18 @@
-# Frontend Mentor - Clipboard landing page solution
-
-![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
+<div align="center">
+  <img align="right" src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="Frontendmentor icon" />
+  <h2 align="left">Frontend Mentor - Clipboard landing page solution</h2>
+</div>
 
 This is a solution to the [Clipboard landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+<!-- ![My Profile](https://img.shields.io/badge/Status-building-blue?style=flat) -->
+![My Profile](https://img.shields.io/badge/Status-finished-green?style=flat)
+&dot;
+[![Status](https://img.shields.io/website?label=Website&down_color=inactive&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fmateusbelicio.github.io/clipboard-landing-page)](https://mateusbelicio.github.io/clipboard-landing-page) 
+&dot;
+[![My Profile](https://img.shields.io/badge/Profile-Mateus_Belicio-282C2E?style=flat&logo=frontendmentor)](https://www.frontendmentor.io/profile/mateusbelicio)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-
-## Overview
+---
 
 ### The challenge
 
@@ -27,13 +25,6 @@ Users should be able to:
 
 ![](./design/desktop-result.png)
 
-### Links
-
-- 🔗 [Solution URL](https://github.com/mateusbelicio/clipboard-landing-page)
-- 🔗 [Live Site URL](https://mateusbelicio.github.io/clipboard-landing-page/)
-
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -42,7 +33,9 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-## Author
+---
+
+### Author
 
 - Frontend Mentor - [@mateusbelicio](https://www.frontendmentor.io/profile/mateusbelicio)
 - Linkedin - [@mateusbelicio](https://www.linkedin.com/in/mateusbelicio)
